@@ -1,0 +1,27 @@
+
+#buttonBox{
+	display: inline-block;
+	border-top: 2px solid darkgray;
+	width: 350px;
+	padding: 30px;
+}
+.formForGit{
+	padding: 10px;
+	/*display: block;*/
+}
+
+.formForGit select, input{
+	height: 20px;
+	width: 100px;
+	margin: 10px;
+	border-radius: 5px;
+}
+button #apl{
+	color: red;
+}
+#clr{
+	color: orange;
+}
+#ad{
+	color: green;
+} 

@@ -1,0 +1,75 @@
+body{
+	/*background-color: black;*/
+}
+#parent{
+	border: 2px solid white;
+	background: linear-gradient(to top, #C0C0C0, #F0F8FF);
+	max-width: 500px;
+	height: 400px;
+	border-radius: 0 0 10px 10px;
+	margin: auto;
+	vertical-align: super;
+	position: relative;
+	text-align: justify;
+	min-width: 200px;
+
+}
+#parent > p{
+	margin-top: 100px;
+	padding: 10px;
+}
+#child{
+	position: absolute;
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	left: -16px;
+	top: -2px;
+	transform:  skewX(-30deg);
+	text-align: center;
+
+}
+#ekg{
+	font-size: 20px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #D2691E;
+	font-weight: 700;
+	transform: skewX(30deg);
+	font-family: sans-serif;: 
+
+}
+/*флаг французских ВМС*/
+
+#flag {
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	/*border: 150px solid blue;*/
+	background-image: radial-gradient(red 0%, red 24%, white 25%, white 50%, blue 51%);
+}
+#blue{
+	display: flex;
+	width: 500px;
+	height: 500px;
+	background-color: blue;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+}
+#white{
+	width: 70%;
+	height: 70%;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#red{
+	width: 50%;
+	height: 50%;
+	background-color: red;
+	border-radius: 50%;
+
+}

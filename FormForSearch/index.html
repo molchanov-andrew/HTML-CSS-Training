@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	
+	<form action="/fff.php" method="POST" id="form">
+		<div id="divForForms">
+			<div class="formForGit">
+				<select name="field" id="" size="">
+					<option value="" disabled selected>Field</option>
+					<option value="">size</option>
+					<option value="">forks</option>
+					<option value="">stars</option>
+					<option value="">followers</option>
+				</select>
+				<select name="field" id="" size="">
+					<option value="" disabled selected>Operator</option>
+					<option value="">></option>
+					<option value=""><</option>
+					<option value="">=</option>
+				</select>
+				<input type="number" placeholder="Value..">
+				<button id="dlt0" onclick="deleteRule(this)">Delete</button>
+			</div>
+		</div>
+		<div id="buttonBox">
+			<button id="apl">Apply</button>
+			<button  type="reset" id="clr">Clear</button>
+			<button id="ad" onclick="addRule()">Add Rule</button>
+		</div>
+	</form>
+
+
+
+	<script type="text/javascript">
+		let count = 1; //количество созданных полей для ввода
+		
+		function addRule () {
+			// let parentElem = document.div;
+			let create = document.createElement('div');
+			create.className="formForGit";
+			create.innerHTML+=`
+				<select name="field" id="" size="">
+					<option value="" disabled selected>Field</option>
+					<option value="">size</option>
+					<option value="">forks</option>
+					<option value="">stars</option>
+					<option value="">followers</option>
+				</select>
+				<select name="field" id="" size="">
+					<option value="" disabled selected>Operator</option>
+					<option value="">></option>
+					<option value=""><</option>
+					<option value="">=</option>
+				</select>
+					<input type="number" placeholder="Value..">
+					<button id="dlt${count}" onclick="deleteRule(this)">Delete</button>
+			`
+			divForForms.appendChild(create);
+		count++;	
+		}	
+
+		function deleteRule(obj) {
+			if (count>1){
+			let objForDelete = obj.parentNode;//ищем родителя кнопки для дальнейшего его (родителя) удаления
+			objForDelete.remove();
+			count--;
+			}
+		}
+
+		function clrForm(){
+			
+
+		}
+	</script>
+</body>
+</html>

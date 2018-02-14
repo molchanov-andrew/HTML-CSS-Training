@@ -1,0 +1,30 @@
+
+#textBox{
+	height: 200px;
+	width: 300px;
+	position: fixed;
+	top: 50%;
+	left:-285px;
+	background-color: pink;
+
+	
+}
+#textBox:hover{
+	left: 0;
+	transition: 1s;
+	
+}
+
+#textBox::after{
+	content: "обратная связь";
+	width: 200px;
+	height: 30px;
+	left: 200px;
+	top: 85px;
+	position: absolute;
+	background-color: yellow;
+	border-radius: 0 0 10px 10px;
+	transform: rotate(-90deg);
+	text-align: center;
+}
+
