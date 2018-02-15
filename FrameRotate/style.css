@@ -1,0 +1,27 @@
+#ext{
+	height:300px;
+	width:300px;
+	position: relative;
+	margin: 100px auto;
+	transform: rotate(-5deg);
+	background-color: lightgrey;
+	border: 2px solid gray;
+	z-index: -1;
+	
+}
+#int{
+	height:300px;
+	width:300px;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	transform: rotate(5deg);
+	background-color: lightgrey;
+	border: 2px solid gray;
+	
+}
+img{
+	margin: 10px;
+	width: 280px;
+	height: 280px;
+}
