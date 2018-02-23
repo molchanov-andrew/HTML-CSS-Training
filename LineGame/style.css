@@ -1,0 +1,43 @@
+table{
+	border-collapse: collapse;
+	overflow: hidden;
+}
+td{
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	position: relative;
+}
+#cc{
+	
+}
+td:hover{
+	background-color: #ff6;
+}
+td:hover:before{
+	content: "";
+	position: absolute;
+	top:-5000px;
+	left: 0px;
+	height: 10000px;
+	width: 100%;
+	background-color: #ff6;
+	z-index: -1;
+}
+tr:hover{
+	content: "";
+	background-color: #ff6;
+	z-index: -1;
+}
+
+div{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: lightblue;
+	margin: auto;
+}
+
+div:hover{
+	background-color: black;
+}
